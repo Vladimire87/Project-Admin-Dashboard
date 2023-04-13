@@ -29,7 +29,14 @@
 
 .header {
   grid-area: header;
-  background-color: var(--purple-50);
+  background-color: var(--purple-200);
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: grid;
+  align-items: center;
+  padding-left: 2.8125em;
+  grid-template-rows: 1fr 1fr;
 }
 
 .sidebar {
@@ -89,7 +96,7 @@
 
 .projects {
   grid-area: projects;
-  background-color: var(--purple-100);
+  background-color: var(--purple-50);
 }
 
 svg {
@@ -115,4 +122,31 @@ li {
 
 .side-bar-settings {
   margin-top: 82px;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.search-header svg {
+  fill: var(--purple-950);
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  border-radius: 25px;
+  width: 608px;
+  height: 32px;
+  border: none;
+  background-color: var(--purple-50);
+  /* outline: none; */
+  padding: 16px;
+}
+
+input[type="search"]:focus {
+  outline: solid 2px var(--purple-950);
 }
