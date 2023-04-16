@@ -35,33 +35,40 @@
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   display: grid;
   align-items: center;
-  padding-left: 2.8125em;
+  padding-left: 40px;
   padding-right: 2.8125em;
   padding-bottom: 0.8em;
-  padding-top: 16px;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
+}
+
+.header p {
+  color: black;
+}
+
+.user-name {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .sidebar {
   grid-area: sidebar;
   background-color: var(--purple-950);
-  gap: 1rem;
   padding: 1.4375rem;
   color: var(--purple-50);
-  position: sticky;
-  top: 0;
+  min-width: 258px;
 }
 
 .sidebar-logo {
   display: flex;
   align-items: center;
   gap: 1em;
-  margin-bottom: 62px;
+  margin-bottom: 54px;
 }
 
 .dashboard-text {
-  font-size: 1.9em;
+  font-size: 1.8em;
   font-weight: bold;
   color: var(--purple-50);
 }
@@ -103,11 +110,11 @@
 .projects {
   grid-area: projects;
   background-color: var(--purple-100);
-  padding-left: 38px;
-  padding-right: 2.8125em;
+  padding-left: 21px;
+  padding-right: 40px;
   padding-bottom: 66px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   column-gap: 25px;
 }
 
@@ -131,15 +138,15 @@ ul {
 li {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style: none;
   font-size: 1.5em;
-  padding-bottom: 1rem;
+  padding-bottom: 14px;
   cursor: pointer;
 }
 
 .side-bar-settings {
-  margin-top: 82px;
+  margin-top: 48px;
 }
 
 .search-header {
@@ -158,8 +165,7 @@ li {
 input[type="search"] {
   border-radius: 25px;
   width: 100%;
-  min-width: 150px;
-  max-width: 608px;
+  min-width: 608px;
   height: 32px;
   border: none;
   background-color: var(--purple-100);
@@ -175,7 +181,7 @@ input[type="search"]:focus {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 2em;
+  gap: 40px;
 }
 
 .right-header-avatar svg {
@@ -198,14 +204,14 @@ input[type="search"]:focus {
 .left-header-avatar {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 21px;
 }
 
 .avatar-left {
   border-radius: 50%;
   background-color: var(--purple-700);
-  min-width: 80px;
-  min-height: 80px;
+  min-width: 82px;
+  min-height: 82px;
   background-image: url(../img/61331-removebg-preview.png);
   background-position: -3px 0px;
   background-size: 170px 170px;
@@ -243,17 +249,29 @@ button {
   background-color: var(--purple-950);
   cursor: pointer;
   color: var(--purple-50);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 50px;
   border: none;
-  min-width: 100px;
-  min-height: 40px;
+  min-width: 103px;
+  min-height: 42px;
+}
+
+h3 {
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 h4 {
   margin: 0;
   padding: 0;
+  font-size: 18px;
+}
+
+p {
+  color: #636363;
+  margin-bottom: 0px;
+  margin-top: 3px;
 }
 
 .card {
@@ -262,14 +280,14 @@ h4 {
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   border-radius: 8px;
   border-left: 8px solid var(--purple-700);
-  height: 217px;
+  min-height: 217px;
   display: grid;
   grid-template-rows: 2fr 1fr;
 }
 
 .card-content {
   padding-top: 36px;
-  padding-left: 32px;
+  padding-left: 22px;
   padding-right: 20px;
 }
 
@@ -286,4 +304,64 @@ h4 {
   width: 1.5em;
   height: 1.5em;
   cursor: pointer;
+}
+
+.announcements-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.announcements-card {
+  background-color: var(--purple-50);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 8px;
+  padding-top: 22px;
+  padding-left: 16px;
+  padding-right: 20px;
+  padding-bottom: 29px;
+}
+
+.announcements-card-content h4 {
+  font-size: 16px;
+}
+
+.announcements-card-content p {
+  font-size: 14px;
+}
+
+hr {
+  margin: -5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #636363;
+}
+
+.trending {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  padding-bottom: 25px;
+}
+
+.avatars-trending {
+  border-radius: 50%;
+  background-color: var(--purple-700);
+  min-width: 50px;
+  min-height: 50px;
+  background-image: url(../img/61331-removebg-preview.png);
+  background-position: -3px 0px;
+  background-size: 110px 110px;
+  background-repeat: no-repeat;
+}
+
+.avatars-trending-names * {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.avatars-trending-names p:first-child {
+  font-weight: 500;
 }
