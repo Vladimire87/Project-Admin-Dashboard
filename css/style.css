@@ -37,15 +37,10 @@
   align-items: center;
   padding-left: 2.8125em;
   padding-right: 2.8125em;
+  padding-bottom: 0.8em;
   padding-top: 16px;
-  grid-template-rows: repeat(
-    2,
-    minmax(92px, 1fr)
-  ); /* set minimum row height to 100px */
-  grid-template-columns: repeat(
-    2,
-    minmax(450px, 1fr)
-  ); /* set minimum column width to 100px */
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .sidebar {
@@ -108,11 +103,18 @@
 .projects {
   grid-area: projects;
   background-color: var(--purple-100);
-  padding: 38px;
+  padding-left: 38px;
+  padding-right: 2.8125em;
+  padding-bottom: 66px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 25px;
+}
+
+.projects-left {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  column-gap: 25px;
-  row-gap: 25px;
+  grid-gap: 25px;
 }
 
 svg {
@@ -261,10 +263,27 @@ h4 {
   border-radius: 8px;
   border-left: 8px solid var(--purple-700);
   height: 217px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
 }
 
 .card-content {
   padding-top: 36px;
   padding-left: 32px;
   padding-right: 20px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1em;
+  padding-right: 1em;
+}
+
+.card-icons svg {
+  fill: var(--purple-950);
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
 }
