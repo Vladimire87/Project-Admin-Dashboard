@@ -36,7 +36,7 @@
   display: grid;
   align-items: center;
   padding-left: 1em;
-  padding-right: 2em;
+  padding-right: 1em;
   padding-bottom: 1em;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -111,10 +111,10 @@
   grid-area: projects;
   background-color: var(--purple-100);
   padding-left: 1em;
-  padding-right: 2em;
+  padding-right: 1em;
   padding-bottom: 1em;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   column-gap: 25px;
 }
 
@@ -165,7 +165,7 @@ li {
 input[type="search"] {
   border-radius: 25px;
   width: 100%;
-  min-width: 510;
+  min-width: 510px;
   max-width: 608px;
   height: 32px;
   border: none;
@@ -311,6 +311,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  min-width: 260px;
 }
 
 .announcements-card {
