@@ -35,9 +35,9 @@
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   display: grid;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 2.8125em;
-  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
 }
@@ -110,11 +110,11 @@
 .projects {
   grid-area: projects;
   background-color: var(--purple-100);
-  padding-left: 21px;
-  padding-right: 40px;
-  padding-bottom: 66px;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
   column-gap: 25px;
 }
 
@@ -165,7 +165,8 @@ li {
 input[type="search"] {
   border-radius: 25px;
   width: 100%;
-  min-width: 608px;
+  min-width: 510;
+  max-width: 608px;
   height: 32px;
   border: none;
   background-color: var(--purple-100);
